@@ -12,7 +12,7 @@ export const routes: Routes = [
          {
     path: 'home',
     loadComponent: () =>
-      import('../app/components/home/home').then(
+      import('../app/components/home/home/home').then(
         (m) => m.Home
       ),
   },
@@ -20,7 +20,7 @@ export const routes: Routes = [
   {
     path: 'projects',
     loadComponent: () =>
-      import('../app/components/projects/projects').then(
+      import('../app/components/projects/projects/projects').then(
         (m) => m.Projects
       ),
   },
@@ -29,7 +29,7 @@ export const routes: Routes = [
   {
     path: 'aboutme',
     loadComponent: () =>
-      import('../app/components/about-me/about-me').then(
+      import('../app/components/about-me/about-me/about-me').then(
         (m) => m.AboutMe
       ),
   },
